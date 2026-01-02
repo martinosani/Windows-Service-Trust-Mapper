@@ -11,4 +11,8 @@ Get-ChildItem -Path $PSScriptRoot\public\*.ps1 -ErrorAction SilentlyContinue | F
 }
 
 
-Export-ModuleMember -Function 'Get-WstmServiceTrustMap'
+# Export all functions defined in public folder (by file base name)
+$publicFunctions = Get-ChildItem -Path (Join-Path $PSScriptRoot 'public\*.ps1') -ErrorAction SilentlyContinue |
+    Select-Object -ExpandProperty BaseName
+
+Export-ModuleMember -Function $publicFunctions
