@@ -1,6 +1,6 @@
-# WindowsServiceTrustMapper
+# Windows Service Trust Mapper
 
-**WindowsServiceTrustMapper** is a PowerShell module designed to analyze Windows services from a security perspective by mapping **trust boundaries** between privileged services and user-controllable resources.
+**Windows-Service-Trust-Mapper** is a PowerShell module designed to analyze Windows services from a security perspective by mapping **trust boundaries** between privileged services and user-controllable resources.
 
 The tool focuses on identifying **risky service configurations** that can lead to **local privilege escalation (LPE)** and other security issues, without performing exploitation.
 
@@ -17,7 +17,7 @@ Windows vulnerabilities often stem from **incorrect trust assumptions**, such as
 
 These conditions are still frequently observed in **real-world CVEs affecting third-party Windows software**, including recent releases.
 
-**WindowsServiceTrustMapper** helps surface these conditions early, in a structured and explainable way.
+**Windows-Service-Trust-Mapper** helps surface these conditions early, in a structured and explainable way.
 
 ---
 
@@ -70,7 +70,7 @@ This is an **analysis and reasoning tool**, not an exploit framework.
 
 ## Tested against real-world vulnerabilities
 
-**WindowsServiceTrustMapper** has been validated against known Windows service misconfigurations observed in real-world CVEs.
+**Windows-Service-Trust-Mapper** has been validated against known Windows service misconfigurations observed in real-world CVEs.
 
 ### Sunshine (Windows) – Unquoted Service Path (CVE-2025-54081)
 
